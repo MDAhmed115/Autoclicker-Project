@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autoclicker"
+version = "0.1.0"
+description = "A small, dependency-free autoclicker for Windows with hotkeys, pause/resume and auto-stop"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+classifiers = ["Operating System :: Microsoft :: Windows"]
+
+[project.scripts]
+autoclicker = "autoclicker.cli:main"
+
+[tool.setuptools]
+packages = ["autoclicker"]
